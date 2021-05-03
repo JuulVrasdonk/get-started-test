@@ -1,0 +1,91 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, p, a {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  max-height: 100vh;
+  display: flex;
+}
+body main {
+  background-image: url("../assets/Abstract-ontwerp_GSAP.jpg");
+  background-size: 100%;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+}
+body div.herosection {
+  background: white;
+  position: absolute;
+  z-index: 2;
+  width: 50%;
+  height: 100%;
+}
+body section {
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  height: 100%;
+  padding-left: 7em;
+  padding-top: 37.5vh;
+  position: relative;
+  z-index: 3;
+}
+body section h1 {
+  font-size: 3em;
+  margin-bottom: 0.7em;
+  width: 10%;
+  transform-origin: center;
+  backdrop-filter: blur(5px);
+  opacity: 0.8;
+}
+body section p {
+  width: 80%;
+  margin-bottom: 2em;
+}
+body section a {
+  font-weight: 700;
+  transition: 0.5s;
+}
+body section a:first-of-type {
+  text-decoration: none;
+  color: white;
+  padding: 0.7em 1em;
+  background: #0055FA;
+  border-radius: 8px;
+  margin-right: 5%;
+}
+body section a:first-of-type img {
+  max-width: 0.95em;
+  transition: 0.5s;
+}
+body section a:first-of-type:hover {
+  background-color: #3276ff;
+  transition: 0.5s;
+}
+body section a:first-of-type:hover img {
+  transform: translateX(3px);
+  transition: 0.5s;
+}
+body section a:last-of-type {
+  color: #0055FA;
+}
+body section a:last-of-type:hover {
+  color: #3276ff;
+}
+body section div.strokein {
+  position: relative;
+  bottom: 17.5vh;
+  right: 3.9vw;
+  width: 1px;
+  transform: scaleY(0);
+  background-color: #4e4e4e;
+}
+
+/*# sourceMappingURL=style.css.map */
